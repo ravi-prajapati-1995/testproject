@@ -31,8 +31,13 @@ public class MajorityElement_NBY2_Time {
         return maxElement;
     }
 
-    // By applying Moore's voting algo
-    //Since we know a element should present more that n/2 times
+    /**
+      By applying Moore's voting algo
+     Since we know a element should present more that n/2 times so if there are 5 element then 3 element will be majority elements
+     So here if we pick a element and when we see that element we will increase count otherwise decrease
+     and put condition if count became 0 then pick another element and in last only majority element will remain
+     */
+
     public static int majorityElementStrivereMethod(final int[] nums) {
         int element = 0;
         int count = 0;
