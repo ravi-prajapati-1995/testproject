@@ -8,6 +8,8 @@ package com.test.dsa.binarySearch;
 * else if it is greater than mid then we will shift low to mid+1
 * and if target element is less than mid then we will shift high to mid-1 as array is sorted
 * int this way we can find element using binary search in O(logN) time complexity
+*
+* If on some point high crosses the low then element is not present in the array and we can return -1
 * */
 public class FindXUsingBinarySearch {
     public static void main(String[] args) {
@@ -20,12 +22,14 @@ public class FindXUsingBinarySearch {
     }
 
     private static int binarySearch1(final int[] arr, final int left, final int right, final int target) {
+       if(left > right) {
+            return -1;
+        }
+
         int mid = (left + right) / 2;
         if(target == arr[mid]) {
             return mid;
-        } else if(left >= right) {
-            return -1;
-        } else if(target > arr[mid]) {
+        }  else if(target > arr[mid]) {
             return binarySearch1(arr, mid + 1, right, target);
         } else {
             return binarySearch1(arr, left, mid - 1, target);
