@@ -1,0 +1,30 @@
+Given an unsorted array with positive and negative integers we need to find perfect pairs
+A pair of integers (x,Y) is perfect if below conditions will be satisfied:
+
+1. min(|x-y|, |x+y|) <= min(|x|, |y|)
+2. max(|x-y|, |x+y|) >= max(|x|, |y|)
+
+Find the numbers of perfect pairs (arr[i], arr[j]) where 0 <= i < j < n
+
+Example: arr = [2, 5, -3]
+Output: 3 because the possible pairs that satisfy condition are: (2, 5), (2, -3) and (5, -3)
+
+----------------------------------------------------------------------------------------
+Job Scheduling:
+
+There are m jobs to schedule on n processors.
+A schedule is balanced if the difference between the number of jobs scheduled on any two neighboring processors does not exceed 1.
+
+The kth processor is the most efficient, and thus, the maximum number of jobs should be scheduled on that processor.
+Find the maximum number of jobs that can be scheduled on the kth processor, such that the overall schedule remains balanced.
+
+Note: Each processor must have at least one job scheduled.
+Example
+
+Consider n = 5, m = 11, k = 3.
+
+Consider the following job schedules:
+
+Schedule	Is balanced?	Jobs scheduled on the kth processor
+[1, 2, 3, 4, 1]	No	-
+[1, 2, 3, 3, 2]	Yes	3
