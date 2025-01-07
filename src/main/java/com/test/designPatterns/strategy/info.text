@@ -1,0 +1,13 @@
+Strategy Design Pattern:
+
+This Pattern is used to remove code duplication if subclass of same level has same set of code i.e
+
+We have vehicle class that is having drive() method
+Vehicle class has 3 child classes NormalVehicle, SportsVehicle and OffRoadVehicle
+
+Lets assume we have same set of functionality in SportsVehicle and offRoadVehicle and we are writing same set of code
+in both the classes
+
+Problem: We are repeating same code in OffRoadVehicle and SportsVehicle there is not way to remove it
+
+Solution: We can create a another interface/Strategy DriveMode which can have 2 mode

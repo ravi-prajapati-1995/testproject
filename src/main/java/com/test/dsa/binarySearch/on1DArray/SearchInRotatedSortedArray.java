@@ -1,4 +1,4 @@
-package com.test.dsa.binarySearch;
+package com.test.dsa.binarySearch.on1DArray;
 
 /**
  * There is an integer array nums sorted in ascending order (with distinct values).

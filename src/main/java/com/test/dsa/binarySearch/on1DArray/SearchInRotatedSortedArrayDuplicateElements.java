@@ -1,4 +1,4 @@
-package com.test.dsa.binarySearch;
+package com.test.dsa.binarySearch.on1DArray;
 
 /**
  * <a href="https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/">Link</a></br>

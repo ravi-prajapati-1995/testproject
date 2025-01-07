@@ -1,4 +1,4 @@
-package com.test.dsa.binarySearch;
+package com.test.dsa.binarySearch.on1DArray;
 
 /*
 * Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search

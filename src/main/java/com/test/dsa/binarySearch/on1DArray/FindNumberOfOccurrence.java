@@ -1,6 +1,4 @@
-package com.test.dsa.binarySearch;
-
-import java.util.Arrays;
+package com.test.dsa.binarySearch.on1DArray;
 
 /*
 https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1

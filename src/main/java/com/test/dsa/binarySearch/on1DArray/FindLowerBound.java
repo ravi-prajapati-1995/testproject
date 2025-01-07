@@ -1,4 +1,4 @@
-package com.test.dsa.binarySearch;
+package com.test.dsa.binarySearch.on1DArray;
 
 /*
 * Given a sorted array arr[] (with unique elements) and an integer k, find the index (0-based) of the largest

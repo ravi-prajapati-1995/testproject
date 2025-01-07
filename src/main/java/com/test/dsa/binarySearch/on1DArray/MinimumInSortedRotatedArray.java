@@ -1,4 +1,4 @@
-package com.test.dsa.binarySearch;
+package com.test.dsa.binarySearch.on1DArray;
 
 /**
  * <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/">Link</a></br>
@@ -38,8 +38,6 @@ public class MinimumInSortedRotatedArray {
                 number = Math.min(number, arr[low]);
                 break;
             }
-
-
 
             // if low is smaller than mid then left half is sorted
             if(arr[low] <= arr[mid] ) { // Why we need to give equal here:
