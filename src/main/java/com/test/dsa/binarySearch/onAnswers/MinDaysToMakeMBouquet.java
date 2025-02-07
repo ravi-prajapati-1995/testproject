@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/
- * ou are given an integer array bloomDay, an integer m and an integer k.
+ * You are given an integer array bloomDay, an integer m and an integer k.
  *
  * You want to make m bouquets. To make a bouquet, you need to use k adjacent flowers from the garden.
  *
@@ -33,7 +33,7 @@ import java.util.Arrays;
  * Input: bloomDay = [1,10,3,10,2], m = 3, k = 2
  * Output: -1
 * */
-public class MinNoOfDayToMakeMBouque {
+public class MinDaysToMakeMBouquet {
     public static void main(String[] args) {
         int[] bloomDay = {1,10,3,10,2};
         int numberOfBouquet = 3;

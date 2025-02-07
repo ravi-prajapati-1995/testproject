@@ -13,8 +13,10 @@ public class NthRootOfNumber {
         System.out.println(nthRootOptimalApproach(1, 14));
     }
 
-    /*
-     * Nth root of m number
+    /* Nth root of m number -- Brute Force
+     * Here we will use 2 loops top loops 1 to m and inner loop for getting the i^n times
+     * for example: if we have n=2, m=9, for first run i=1 getNMultiply gives 1(1*1) and for 2 it gives 4(2*2)
+     *
      *
      * TC - (m*n) if we use simple loops
      * If we use power exponential method then we can calculate power(n number with m times) in logN
@@ -64,6 +66,9 @@ public class NthRootOfNumber {
     * Here if we are calculate  power of 10^9 it may cross the long limit to so here we can add one more condition
     * that if while multiply we are at place where it cross given number then only we can break there is not need to calculate
     * further
+    *
+    *for x=1, n=2, m=9 this will  multiply 1*1 (x*x) two times as  n=2
+    * if n=3 and x=3 it  will give (3*3*3)
     * */
     private static int getNMultiply(final int x, final int n, final int m) {
         int result = 1;
