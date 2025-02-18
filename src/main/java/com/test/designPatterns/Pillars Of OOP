@@ -1,0 +1,18 @@
+1. Abstraction: Mean hiding, it is a modal of real-world object, Limited to a specific context, which
+    represents all details relevant to this context with high accuracy and omits all the rest.
+
+    I.e: we have Airplane class and there are multiple private methods(-) and only few public method(+)
+        Airplane:
+        -speed
+        -altitude
+        -pitchAngle
+        -yawAngle
+        --------------------
+        + fly()
+
+    In above example we exposed only fly() method to user they don't know about the internal details like
+    speed, altitude etc..
+
+2. Encapsulation: Meaning put the variable and method in single unit called class.
+3. Polymorphism:
+4. Inheritance

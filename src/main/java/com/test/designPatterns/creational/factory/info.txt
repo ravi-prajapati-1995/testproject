@@ -1,0 +1,30 @@
+                      Factory Design Pattern:
+It is creational design pattern which provide an interface for creating object in superclass but allow
+subclass to alter the type of object that will be created.
+
+Interface Vehicle {
+    void drive();
+}
+
+class car implements Vehicle() {
+    void drive() {
+        sout("Drive a Car")
+    }
+}
+
+class Bike implements Vehicle() {
+    void drive() {
+        sout("Ride a Car")
+    }
+}
+
+
+class VehicleFactory() {
+    public static Vehicle getVehicle(String vehicle) {
+        if("car".equals(vehicle)){
+            return new Car();
+        } else {
+            return new Bike();
+        }
+    }
+}

@@ -11,7 +11,8 @@ import java.util.Arrays;
  *
  * The garden consists of n flowers, the ith flower will bloom in the bloomDay[i] and then can be used in exactly one bouquet.
  *
- * Return the minimum number of days you need to wait to be able to make m bouquets from the garden. If it is impossible to make m bouquets return -1.
+ * Return the minimum number of days you need to wait to be able to make m bouquets from the garden.
+ * If it is impossible to make m bouquets return -1.
  * Input: bloomDay = [1,10,3,10,2], m = 3, k = 1
  * Output: 3
  * Explanation: Let us see what happened in the first three days. x means flower bloomed and _ means flower did not bloom in the garden.
@@ -53,7 +54,7 @@ public class MinDaysToMakeMBouquet {
         final var maxBloomDay = Arrays.stream(bloomDay).max().getAsInt();
 
         for(int i = minBloomDay; i <= maxBloomDay; i++) {
-            final var bouquetCount = getBouquetCount(bloomDay, numberOfBouquet, noOfFlowers, i);
+            final var bouquetCount = getBouquetCount(bloomDay, noOfFlowers, i);
             if(bouquetCount >= numberOfBouquet) {
                 return i;
             }
@@ -72,7 +73,7 @@ public class MinDaysToMakeMBouquet {
          var high = Arrays.stream(bloomDay).max().getAsInt();
          while(low <= high) {
              int mid = (low + high) / 2;
-             final var bouquetCount = getBouquetCount(bloomDay, numberOfBouquet, noOfFlowers, mid);
+             final var bouquetCount = getBouquetCount(bloomDay, noOfFlowers, mid);
              if(bouquetCount >=  numberOfBouquet) {
                  result = mid;
                  high = mid -1;
@@ -86,7 +87,7 @@ public class MinDaysToMakeMBouquet {
 
     //[7,7,7,7,12,7,7]
     private static int getBouquetCount(
-            final int[] bloomDay, final int numberOfBouquet, final int noOfFlowers, final int day
+            final int[] bloomDay, final int noOfFlowers, final int day
     ) {
         int count = 0;
         int adjacentFlowers = 0;
