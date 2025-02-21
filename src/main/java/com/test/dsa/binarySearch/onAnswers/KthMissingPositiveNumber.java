@@ -83,6 +83,8 @@ public class KthMissingPositiveNumber {
      * till 7 it will be 7(actual Number) - (3(index) + 1) = 3 nos are missing before 7
      * in same way for  11 at index 4 so to get how many numbers are missing before it 11 - (4+1) = 6
      * 1. Our first task  is to  find the nearby indexes in which our answer is exist
+     *
+     *
      * @param arr
      * @param k
      * @return

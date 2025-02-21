@@ -1,0 +1,11 @@
+1. Debug Challenge:
+    If we have 3 microservices S1, S2 and S3 and  S1 is getting some data from S2 and S2 getting data from S3
+    and we did some changing in response of S3
+    Because of these changes in S3, S2 start breaking and due to s2, s1 also start breaking
+    So for debug main cause all three microservice needs to evaluate who is causing issue
+
+2. Loosely Coupled:
+     Microservice should be loosely coupled so that if we scale s1 it should not impact any client of this microservices
+
+3. Duplicate Code:
+      There can be many classes that can be used in multiple microservices and many tables which many services needs frequently
